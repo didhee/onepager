@@ -1,0 +1,155 @@
+* {
+   font-family: 'Segoe UI', sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-color: #F3F2EF;
+}
+
+nav {
+   width: 100%;
+   background-color: #ffffff;
+   position: sticky;
+   top: 0;
+   z-index: 100;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-wrapper {
+   width: 79%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 15px 135px;
+
+}
+
+.logo {
+   width: 18%;
+   display: flex;
+   justify-content: space-between;
+} 
+
+nav img {
+   width: 80px;
+}
+
+a {
+   text-decoration: none;
+   cursor: pointer;
+   color: #0A66C2;
+}
+
+nav a {
+   border: 1px solid #0A66C2;
+   padding: 8px 12px;
+   border-radius: 10px;
+}
+
+.btn-demo {
+   color: #ffffff;
+   background-color: #0A66C2;
+   margin-left: 20px;
+}
+
+.btn-demo:hover {
+   background-color: #ffffff;
+   color: #0A66C2;
+}
+
+.btn-visit:hover {
+   background-color: #62a7ec;
+   color: #ffffff;
+}
+
+section {
+   width: 80%;
+   margin: 60px auto;
+}
+
+.section-title {
+   font-size: 22px;
+   font-weight: 500;
+   margin-bottom: 30px;
+}
+
+.logo-img {
+   width: 35px;
+   margin-right: 10px;
+   position: relative;
+   bottom: 5px;
+}
+
+.logo-dr {
+   width: 30px;
+}
+
+.logo-iam, .logo-med, .logo-sajenwa, .logo-risk {
+   position: relative;
+   top: 1px;
+}
+
+.logo-weber {
+   width: 20px;
+}
+
+.grid-wrapper {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+   grid-template-rows: repeat(auto-fill, minmax(400px, auto));
+   gap: 30px;
+}
+
+.card {
+   background-color: #ffffff;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+   padding: 25px 30px;
+}
+
+.card-img {
+   width: 100%;
+   height: 50%;
+   margin-bottom: 20px;
+}
+
+.card-img img {
+   width: 100%;
+}
+
+.card-details {
+   width: 100%;
+}
+
+.card-logo {
+   display: flex;
+   margin-bottom: 10px;
+}
+
+.title {
+   text-transform: uppercase;
+   font-size: 12px;
+}
+
+.subtitle {
+   line-height: 22px;
+   font-size: 13px;
+}
+
+.card-details a {
+   margin-top: 10px;
+   float: right;
+}
+
+/* .link-saj{
+   position: relative;
+   top: 40px;
+} */
+
+/* .link-med {
+   position: relative;
+   top: 25px;
+} */
