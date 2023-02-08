@@ -112,21 +112,68 @@ section {
 
 .card-img {
    width: 100%;
-   height: 50%;
+   height: 60%;
    margin-bottom: 20px;
+   cursor: zoom-in;
 }
 
 .card-img img {
    width: 100%;
+   transition: transform 0.3s;
+}
+
+.card-img img:hover {
+   transform: scale(1.2);
 }
 
 .card-details {
    width: 100%;
 }
 
+.card-full {
+   background-color: #ffffff;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+   padding-bottom: 25px;
+}
+
+.card-img-full {
+   width: 100%;
+   height: 60%;
+   margin-bottom: 35px;
+   cursor: zoom-in;
+}
+
+.card-deets-full{
+   width: 80%;
+   margin: 0 auto;
+}
+
+.img-full{
+   border-top-right-radius: 10px;
+   border-top-left-radius: 10px;
+   /* height: 100%; */
+   width: 100%;
+   transition: transform 0.3s;
+}
+
+.img-full:hover {
+   transform: scale(0.9);
+}
+
+.img-middle {
+   position: relative;
+   top: 30px;
+}
+
 .card-logo {
    display: flex;
-   margin-bottom: 10px;
+   margin-top: 10px;
+   /* margin-bottom: 4px; */
+}
+
+.card-logo-full {
+   display: flex;
 }
 
 .title {
@@ -139,10 +186,10 @@ section {
    font-size: 13px;
 }
 
-.card-details a {
+/* .card-details a {
    margin-top: 10px;
    float: right;
-}
+} */
 
 /* .link-saj{
    position: relative;
@@ -153,3 +200,71 @@ section {
    position: relative;
    top: 25px;
 } */
+
+.modal {
+   display: none; 
+   position: fixed;
+   z-index: 1;
+   padding-top: 40px;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgb(0,0,0);
+   background-color: rgba(0,0,0,0.9);
+ }
+ 
+ .modal-content {
+   margin: auto;
+   display: block;
+   width: 75%;
+   max-width: 900px;
+ }
+ 
+ #caption {
+   margin: auto;
+   display: block;
+   width: 80%;
+   max-width: 700px;
+   text-align: center;
+   color: #ccc;
+   padding: 10px 0;
+   height: 150px;
+   text-transform: uppercase;
+   margin-top: 10px;
+   font-weight: 600;
+ }
+ 
+ .modal-content, #caption {  
+   -webkit-animation-name: zoom;
+   -webkit-animation-duration: 0.6s;
+   animation-name: zoom;
+   animation-duration: 0.6s;
+ }
+ 
+ @-webkit-keyframes zoom {
+   from {-webkit-transform:scale(0)} 
+   to {-webkit-transform:scale(1)}
+ }
+ 
+ @keyframes zoom {
+   from {transform:scale(0)} 
+   to {transform:scale(1)}
+ }
+ 
+ .close {
+   position: absolute;
+   top: 15px;
+   right: 35px;
+   color: #f1f1f1;
+   font-size: 40px;
+   font-weight: bold;
+   transition: 0.3s;
+ }
+ 
+ .close:hover,
+ .close:focus {
+   color: #bbb;
+   text-decoration: none;
+   cursor: pointer;
+ }
