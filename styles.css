@@ -96,6 +96,10 @@ section {
    width: 20px;
 }
 
+.logo-max {
+   width: 60px;
+}
+
 .grid-wrapper {
    display: grid;
    grid-template-columns: repeat(auto-fill, minmax(300px, auto));
