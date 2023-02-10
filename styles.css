@@ -5,6 +5,11 @@
    box-sizing: border-box;
 }
 
+:root {
+   --error-color: #e74c3c;
+   --success-color: #2ecc71;
+}
+
 body {
    background-color: #F3F2EF;
 }
@@ -24,7 +29,7 @@ nav {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 15px 0;
+   padding: 13px 0;
 }
 
 .logo {
@@ -164,6 +169,10 @@ section {
    /* height: 100%; */
    width: 100%;
    transition: transform 0.3s;
+}
+
+.img-border-radius {
+   border-radius: 15px;
 }
 
 .img-full:hover {
@@ -347,6 +356,7 @@ section {
    background-color: #62a7ec;
    border: none;
    color: #ffffff;
+   cursor: pointer;
  }
 
  .btn-send:hover, .btn-send:focus {
@@ -366,5 +376,23 @@ section {
    border: none;
  }
 
- 
+ .form-control.error input {
+   border-color: var(--error-color);
+ }
+
+ .form-control.success input {
+   border-color: var(--success-color);
+ }
+
+ .form-control .small {
+   color: var(--error-color);
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   visibility: hidden;
+ }
+
+ .form-control.error .small {
+   visibility: visible;
+ }
 
