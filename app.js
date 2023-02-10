@@ -3,6 +3,7 @@ let nav = document.getElementById("nav");
 let images = document.getElementsByClassName("myImg");
 let modalImg = document.getElementById("img01");
 let captionText = document.getElementById("caption");
+let blur = document.getElementById("blur-bg");
 
 
 for (let i = 0; i < images.length; i++) {
