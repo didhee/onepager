@@ -97,7 +97,15 @@ section {
    width: 30px;
 }
 
-.logo-iam, .logo-med, .logo-sajenwa, .logo-risk {
+.logo-incentive {
+   width: 50px;
+}
+
+.logo-procure {
+   width: 45px;
+}
+
+.logo-iam, .logo-med, .logo-sajenwa, .logo-risk, .logo-incentive {
    position: relative;
    top: 1px;
 }
