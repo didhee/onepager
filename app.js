@@ -7,6 +7,9 @@ let blur = document.getElementById("blur-bg");
 const getEmail = document.getElementById("email");
 const form = document.getElementById("form");
 // const button = document.getElementsByClassName("btn-send")
+const btnDemo = document.getElementById("btn-demo");
+let mod = document.getElementById("mod");
+let formContent = document.getElementById("form-content");
 
 //show error message
 function showErrorMessage(input, message) {
@@ -53,6 +56,16 @@ let span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
   modal.style.display = "none"
   nav.style.display = "block"
+  mod.style.display = "none"
+  form.style.display = "none"
+  formContent.style.display = "none"
+}
+
+window.onclick = function(e) { 
+  e.preventDefault()
+  if (e.target === mod) {
+    mod.style.display = "none"
+  }
 }
 
 //event handlers
@@ -67,3 +80,14 @@ form.addEventListener("submit", function(e) {
 
   //   checkEmail(email);
   // })
+
+  // function togglePopup() {
+  //   document.getElementById("mod").classList.toggle("active");
+  //  }
+
+  btnDemo.addEventListener("click", function() {
+    mod.style.display = "flex"
+    nav.style.display = "none"
+    // formContent.style.display = "flex"
+    form.style.display = "block"
+  })
