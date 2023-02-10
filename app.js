@@ -9,6 +9,7 @@ const form = document.getElementById("form");
 // const button = document.getElementsByClassName("btn-send")
 const btnDemo = document.getElementById("btn-demo");
 let mod = document.getElementById("mod");
+// let closeMode = document.getElementsByClassName("close")
 let formContent = document.getElementById("form-content");
 
 //show error message
@@ -56,17 +57,25 @@ let span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
   modal.style.display = "none"
   nav.style.display = "block"
-  mod.style.display = "none"
-  form.style.display = "none"
-  formContent.style.display = "none"
+  // mod.style.display = "none"
+  // form.style.display = "none"
+  // formContent.style.display = "none"
 }
 
-window.onclick = function(e) { 
-  e.preventDefault()
-  if (e.target === mod) {
-    mod.style.display = "none"
-  }
+let closeMode = document.getElementsByClassName("close-mode") [0];
+
+closeMode.onclick = function() { 
+  mod.style.display = "none";
+  nav.style.display = "block";
+  modal.style.display = "none"
 }
+
+// window.onclick = function(e) { 
+//   e.preventDefault()
+//   if (e.target === mod) {
+//     mod.style.display = "none"
+//   }
+// }
 
 //event handlers
 form.addEventListener("submit", function(e) {

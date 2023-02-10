@@ -282,7 +282,7 @@ section {
    to {transform:scale(1)}
  }
  
- .close {
+ .close, .close-mode {
    position: absolute;
    top: 15px;
    right: 35px;
@@ -293,7 +293,7 @@ section {
  }
  
  .close:hover,
- .close:focus {
+ .close:focus, .close-mode:hover, .close-mode:focus {
    color: #bbb;
    text-decoration: none;
    cursor: pointer;
