@@ -11,6 +11,10 @@ const btnDemo = document.getElementById("btn-demo");
 let mod = document.getElementById("mod");
 // let closeMode = document.getElementsByClassName("close")
 let formContent = document.getElementById("form-content");
+let name = document.getElementById("name");
+let email = document.getElementById("email");
+let sendMessage = document.getElementById("send-message");
+let buttonSubmit = document.getElementById("btn-submit");
 
 //show error message
 function showErrorMessage(input, message) {
