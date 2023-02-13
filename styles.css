@@ -47,30 +47,38 @@ a {
    text-decoration: none;
    cursor: pointer;
    color: #0A66C2;
-   font-size: 14px;
+   font-size: 12px;
 }
 
 nav a {
-   border: 1px solid #0A66C2;
-   padding: 4px 12px;
+   /* border: 1px solid #ff0000; */
+   /* color: #000000; */
+   color: #e74c3c;
+   /* border: 1px solid #0A66C2; */
+   padding: 6px 12px;
    /* border-radius: 3px; */
 }
 
 .btn-demo {
-   color: #ffffff;
-   background-color: #0A66C2;
+   color: #ff0000;
+   background-color: #ffffff;
+   border: 1px solid #ff0000;
    margin-left: 20px;
 }
 
 .btn-demo:hover, .btn-demo:focus {
-   background-color: #ffffff;
-   color: #0A66C2;
+   background-color: rgba(254, 124, 0, .15);
+   /* color: #0A66C2; */
+   color: #e74c3c;
+   border: none;
    outline: none;
 }
 
 .btn-visit:hover, .btn-visit:focus {
-   background-color: #62a7ec;
-   color: #ffffff;
+   background-color: rgba(254, 124, 0, .15);
+   /* background-color: #62a7ec; */
+   /* color: #ffffff; */
+   color: #e74c3c;
    outline: none;
    border: none;
 }
@@ -179,11 +187,19 @@ section {
    transition: transform 0.3s;
 }
 
+.img-resize {
+   height: 100%;
+   width: 100%;
+   border-top-right-radius: 10px;
+   border-top-left-radius: 10px;
+   transition: transform 0.3s;
+}
+
 .img-border-radius {
    border-radius: 15px;
 }
 
-.img-full:hover {
+.img-full:hover, .img-resize:hover {
    transform: scale(0.9);
 }
 
@@ -200,6 +216,7 @@ section {
 
 .card-logo-full {
    display: flex;
+   /* margin-top: 50px; */
 }
 
 .title {
