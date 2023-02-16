@@ -88,7 +88,7 @@ p {
    grid-template-columns: repeat(auto-fill, minmax(300px, auto));
    grid-template-rows: repeat(auto-fill, minmax(300px, auto));
    gap: 30px;
-   width: 80%;
+   width: 90%;
    margin: 0 auto;
   /* justify-items: center; */
 }
@@ -210,4 +210,5 @@ ul li {
 .top-link {
    float: right;
    padding: 6px 18px;
+   animation: beam 5s infinite;
 }
