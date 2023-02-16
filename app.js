@@ -7,7 +7,7 @@ let blur = document.getElementById("blur-bg");
 const getEmail = document.getElementById("email");
 const form = document.getElementById("form");
 // const button = document.getElementsByClassName("btn-send")
-const btnDemo = document.getElementById("btn-demo");
+let btnDemo = document.getElementById("btn-demo");
 let mod = document.getElementById("mod");
 // let closeMode = document.getElementsByClassName("close")
 let formContent = document.getElementById("form-content");
@@ -81,19 +81,18 @@ form.addEventListener("submit", function(e) {
   checkEmail(email);
 })
 
-  // button.addEventListener("click", function (e) {
-  //   e.preventDefault();
+// button.addEventListener("click", function (e) {
+//   e.preventDefault();
+//   checkEmail(email);
+// })
+// function togglePopup() {
+//   document.getElementById("mod").classList.toggle("active");
+//  }
 
-  //   checkEmail(email);
-  // })
-
-  // function togglePopup() {
-  //   document.getElementById("mod").classList.toggle("active");
-  //  }
-
-  btnDemo.addEventListener("click", function() {
+btnDemo.addEventListener("click", function() {
     mod.style.display = "flex"
     nav.style.display = "none"
     // formContent.style.display = "flex"
     form.style.display = "block"
-  })
+})
+

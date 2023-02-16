@@ -5,6 +5,10 @@
    box-sizing: border-box;
 }
 
+*::before, *::after {
+   box-sizing: border-box;
+}
+
 :root {
    --error-color: #e74c3c;
    --success-color: #2ecc71;
@@ -12,6 +16,7 @@
 
 body {
    background-color: #F3F2EF;
+   /* background-color: #ffffff; */
 }
 
 nav {
@@ -46,9 +51,29 @@ nav img {
 a {
    text-decoration: none;
    cursor: pointer;
-   color: #0A66C2;
+   color: #e74c3c;
    font-size: 12px;
+   /* float: right; */
 }
+
+a:hover {
+   text-decoration: underline;
+}
+
+.card-link {
+   /* float: right; */
+   color: #e74c3c;
+   font-size: 10px;
+   text-transform: capitalize;
+}
+
+/* .dr {
+   height: 85px;
+} */
+
+/* .card-link:hover, .card-link:focus {
+   background-color: rgba(254, 124, 0, .15);
+} */
 
 nav a {
    /* border: 1px solid #ff0000; */
@@ -64,6 +89,17 @@ nav a {
    background-color: #ffffff;
    border: 1px solid #ff0000;
    margin-left: 20px;
+}
+
+.btn-back {
+   background-color: rgba(254, 124, 0, .15);
+}
+
+.btn-back:hover, .btn-back:focus {
+   background-color: #ffffff;
+   color: #ffffff;
+   outline: none;
+   border: none;
 }
 
 .btn-demo:hover, .btn-demo:focus {
@@ -137,7 +173,7 @@ section {
    background-color: #ffffff;
    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
    border-radius: 10px;
-   padding: 25px 30px;
+   padding: 30px;
 }
 
 .card-img {
@@ -164,7 +200,7 @@ section {
    background-color: #ffffff;
    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
    border-radius: 10px;
-   padding-bottom: 25px;
+   padding-bottom: 30px;
 }
 
 .card-img-full {
@@ -405,13 +441,6 @@ section {
 
  ::placeholder {
   color: #eeeeee;
- }
-
- .btn-back:hover, .btn-back:focus {
-   background-color: #62a7ec;
-   color: #ffffff;
-   outline: none;
-   border: none;
  }
 
  .form-control.error input {
