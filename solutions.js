@@ -38,9 +38,9 @@ btnDemo.addEventListener("click", function() {
 
 
 
-//assentory script
+//solutions script
 let slides = document.getElementsByClassName("my-slide")
-let dottings = document.getElementsByClassName("dot")
+// let dottings = document.getElementsByClassName("dot")
 
 let slideIndex = 1;
 showSlides(slideIndex)
@@ -67,12 +67,12 @@ function showSlides(n) {
   }
 
   // looping through dots 
-  for (let i = 0; i < dottings.length; i++) {
-    dottings[i].className = dottings[i].className.replace(" active", "")
-  }
+  // for (let i = 0; i < dottings.length; i++) {
+  //   dottings[i].className = dottings[i].className.replace(" active", "")
+  // }
 
   slides[slideIndex-1].style.display = "block"
-  dottings[slideIndex-1].className += "active"
+  // dottings[slideIndex-1].className += "active"
 }
 
 // event listeners 
