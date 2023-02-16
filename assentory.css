@@ -88,6 +88,9 @@ p {
    grid-template-columns: repeat(auto-fill, minmax(300px, auto));
    grid-template-rows: repeat(auto-fill, minmax(300px, auto));
    gap: 30px;
+   width: 80%;
+   margin: 0 auto;
+  /* justify-items: center; */
 }
 
 .card-benefits {
@@ -120,7 +123,11 @@ ul li {
    line-height: 22px;
 }
 
-.license-details {
+.title-license {
+   text-align: left;
+}
+
+/* .license-details {
    width: 40%;
    margin: 0 auto;
 }
@@ -128,7 +135,7 @@ ul li {
 .license-list {
   width: 50%;
   margin: 0 auto;
-}
+} */
 
 .slide-container {
    width: 100%;
@@ -198,4 +205,9 @@ ul li {
 @keyframes fade {
    from {opacity: 0.4} 
    to {opacity: 1}
+}
+
+.top-link {
+   float: right;
+   padding: 6px 18px;
 }
