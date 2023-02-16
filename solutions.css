@@ -86,7 +86,7 @@ p {
 .grid-wrapper-benefits {
    display: grid;
    grid-template-columns: repeat(auto-fill, minmax(300px, auto));
-   grid-template-rows: repeat(auto-fill, minmax(300px, auto));
+   grid-template-rows: repeat(auto-fill, minmax(350px, auto));
    gap: 30px;
    width: 90%;
    margin: 0 auto;
@@ -102,7 +102,21 @@ p {
 
 .card-one {
   position: relative;
-  top: 25px;
+  top: 50px;
+}
+
+.card-one:hover {
+   background-color: #ffffff;
+}
+
+.card-two {
+   animation: beam 8s infinite;
+}
+
+.card-two:hover {
+   animation: none;
+   cursor: grab;
+   background-color: #ffffff;
 }
 
 h5 {
@@ -178,7 +192,7 @@ ul li {
    color: #717171;
 }
 
-.dots {
+/* .dots {
    transform: translate(50%, -50%);
 }
 
@@ -191,7 +205,7 @@ ul li {
    border-radius: 50%;
    display: inline-block;
    transition: background-color 0.6s ease;
-}
+} */
  
 .active, .dot:hover {
    background-color: #717171;
