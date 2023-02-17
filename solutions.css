@@ -59,6 +59,22 @@ body {
    text-transform: uppercase;
 }
 
+/* .slidein-animation {
+   position: absolute; 
+   left: -600px;
+   width: 37%;
+   animation: slideIn 0.5s 3s forwards;
+} */
+
+/* @keyframes slideIn {
+   0% {
+      right: 100;
+   }
+   100% {
+      left: 0;
+   }
+} */
+
 .hero-subtitle {
    font-size: 16px;
    line-height: 27px;
@@ -167,6 +183,9 @@ ul li {
 .my-slide img {
    width: 100%;
    vertical-align: middle;
+   border: 1px solid #cacaca;
+   padding: 15px;
+   border-radius: 15px;
 }
 
 .prev, .next {
@@ -225,4 +244,24 @@ ul li {
    float: right;
    padding: 6px 18px;
    animation: beam 5s infinite;
+}
+
+.bounce-animation {
+   animation: bounce 3s 1s infinite;
+}
+ 
+ @keyframes bounce {
+   0%,
+   100% {
+       transform: translateY(0);
+     }
+   
+   50% {
+       transform: translateY(7px);
+     }
+}
+
+.section-subtitle {
+   position: relative;
+   top: 100px;
 }

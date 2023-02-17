@@ -9,7 +9,6 @@ const form = document.getElementById("form");
 // const button = document.getElementsByClassName("btn-send")
 let btnDemo = document.getElementById("btn-demo");
 let mod = document.getElementById("mod");
-// let closeMode = document.getElementsByClassName("close")
 let formContent = document.getElementById("form-content");
 let name = document.getElementById("name");
 let email = document.getElementById("email");
@@ -84,7 +83,7 @@ form.addEventListener("submit", function(e) {
 // button.addEventListener("click", function (e) {
 //   e.preventDefault();
 //   checkEmail(email);
-// })
+// }) 
 // function togglePopup() {
 //   document.getElementById("mod").classList.toggle("active");
 //  }
