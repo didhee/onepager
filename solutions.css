@@ -125,13 +125,12 @@ p {
    background-color: #ffffff;
 }
 
-.card-two {
+/* .card-two {
    animation: beam 8s infinite;
-}
+} */
 
 .card-two:hover {
    animation: none;
-   cursor: grab;
    background-color: #ffffff;
 }
 
@@ -182,10 +181,18 @@ ul li {
 
 .my-slide img {
    width: 100%;
-   vertical-align: middle;
    border: 1px solid #cacaca;
    padding: 15px;
    border-radius: 15px;
+}
+
+.myslide-weber {
+   width: 70%;
+}
+
+.myslide-weber img {
+   width: 400px;
+   border: none;
 }
 
 .prev, .next {
