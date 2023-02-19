@@ -48,7 +48,6 @@ body {
 
 .hero-texts {
    width: 37%;
-   /* position: absolute; */
 }
 
 .hero-title {
@@ -59,22 +58,6 @@ body {
    text-transform: uppercase;
 }
 
-/* .slidein-animation {
-   position: absolute; 
-   left: -600px;
-   width: 37%;
-   animation: slideIn 0.5s 3s forwards;
-} */
-
-/* @keyframes slideIn {
-   0% {
-      right: 100;
-   }
-   100% {
-      left: 0;
-   }
-} */
-
 .hero-subtitle {
    font-size: 16px;
    line-height: 27px;
@@ -82,8 +65,27 @@ body {
    bottom: 20px;
    font-style: italic;
    font-weight: 500;
+   /* animation: slide-in-anim 1.5s ease-out forwards; */
 }
 
+/* @keyframes slide-in-anim {
+	20% {
+		opacity: 0;
+	} */
+	/* 60% {
+		transform: translateX(-45%);
+	}
+	75% {
+		transform: translateX(-52%);
+	} */
+	/* 100% {
+		opacity: 1;
+		transform: translateX(10%);
+	}
+} */
+
+
+/* other styles  */
 h3 {
    text-align: center;
    font-size: 32px;
@@ -106,7 +108,6 @@ p {
    gap: 30px;
    width: 90%;
    margin: 0 auto;
-  /* justify-items: center; */
 }
 
 .card-benefits {
@@ -124,10 +125,6 @@ p {
 .card-one:hover {
    background-color: #ffffff;
 }
-
-/* .card-two {
-   animation: beam 8s infinite;
-} */
 
 .card-two:hover {
    animation: none;
@@ -193,6 +190,12 @@ ul li {
 .myslide-weber img {
    width: 400px;
    border: none;
+   /* margin: 0 auto; */
+   transform: translate(50%);
+}
+
+.myslide-greety {
+   width: 700px;
 }
 
 .prev, .next {
