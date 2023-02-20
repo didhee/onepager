@@ -184,7 +184,9 @@ ul li {
 }
 
 .myslide-weber {
-   width: 70%;
+   width: 100%;
+   display: flex;
+   /* flex-direction: row; */
 }
 
 .myslide-weber img {
