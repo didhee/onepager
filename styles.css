@@ -52,7 +52,7 @@ a {
    text-decoration: none;
    cursor: pointer;
    color: #e74c3c;
-   font-size: 12px;
+   font-size: 13px;
    /* float: right; */
 }
 
@@ -63,8 +63,9 @@ a:hover {
 .card-link {
    /* float: right; */
    color: #e74c3c;
-   font-size: 10px;
+   font-size: 13px;
    text-transform: capitalize;
+   font-weight: 500;
 }
 
 /* .dr {
@@ -81,6 +82,7 @@ nav a {
    color: #e74c3c;
    /* border: 1px solid #0A66C2; */
    padding: 6px 12px;
+   /* font-weight: 500; */
    /* border-radius: 3px; */
 }
 
@@ -127,7 +129,7 @@ section {
 .section-title {
    font-size: 22px;
    font-weight: 500;
-   margin-bottom: 30px;
+   margin-bottom: 25px;
 }
 
 .logo-img {
