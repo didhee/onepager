@@ -560,6 +560,10 @@ section {
       padding: 4px 8px;
    }
 
+   .nav-links {
+      display: none;
+   }
+
    .btn-demo {
       margin-left: 0;
    }
