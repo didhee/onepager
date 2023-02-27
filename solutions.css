@@ -260,6 +260,17 @@ ul li {
    animation: beam 5s infinite;
 }
 
+.greety {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* grid-template-columns: repeat(2, minmax(300px auto)); */
+}
+
+.greety img {
+   border: none;
+}
+
 /* .bounce-animation {
    animation: bounce 3s 1s infinite;
 }
